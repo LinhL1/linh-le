@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "Me, My-Shelf, and I",
     category: "Creative Web App",
     description:
-      "A creative personal digital reading nook to provide a fun and engaging way to track read books, reading goals, and notes.",
+      "A creative personal digital reading nook to track read books, reading goals, and notes.",
     year: "2026",
     link: "#",
   },
