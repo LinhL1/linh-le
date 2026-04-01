@@ -23,7 +23,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h2 className="section-heading text-foreground">
-              A bit about <em>me</em>
+              A bit <em className="text-sage">about me</em>
             </h2>
           </motion.div>
 
@@ -34,16 +34,17 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              An indie web developer and designer.
-              With a background in both creative and technical disciplines, I try to put my best foot forward and bring
-              a unique perspective to every project I get to be involved with. It started with a passion for digital design
-              and websites, and now I am actively looking to explore the cyber space and security. 
+            <em className="text-foreground">A web developer and designer who enjoys to bring ideas into life.</em>
+            <p className="font-body text-lg leading-relaxed text-muted-foreground">  
+              With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to. 
+              From working with non-profit organizations, student-led inititives, and personal projects, I care about the impact, design, and functionality of my work. 
+              What started with a passion for making fun websites...led to involvements on projects in AI/ML, cyber, and of course, more web projects.
+              
             </p>
+
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              When I'm not developing projects, you'll find me
-              reading, hanging out with my bird, or working on creative projects, with an emphasis on{" "}
-              <em className="text-foreground">functionality and aesthetics.</em>
+              When I'm not developing projects, you'll find me 
+              reading, journaling, or doodling. 
             </p>
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[

@@ -16,9 +16,9 @@ const experiences: ExperienceItem[] = [
       "Authored cybersecuirty focused policy breifs and developed an media literacy interactive web application using React.",
   },
   {
-    role: "",
-    company: "Agency Name",
-    period: "2020 — 2022",
+    role: "Grant Writer",
+    company: "Project Safeweb",
+    period: "AUG 2025 - JAN 2026",
     description:
       "Built interactive web experiences for clients across various industries with modern frameworks.",
   },

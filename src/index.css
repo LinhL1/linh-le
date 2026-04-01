@@ -50,9 +50,12 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     --butter: 48 85% 72%;
+    --sage: 145 18% 48%;
   }
 
   .dark {
+    --sage: 145 15% 38%;
+
     --background: 160 25% 7%;
     --foreground: 40 25% 90%;
 
@@ -120,5 +123,34 @@
   .section-heading {
     font-family: var(--font-display);
     @apply text-4xl md:text-5xl font-medium italic;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) hsl(var(--background));
   }
 }

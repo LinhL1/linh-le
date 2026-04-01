@@ -23,7 +23,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h2 className="section-heading text-foreground mb-8">
-              Let's <em>chit-chat</em>
+              Let's <em className="text-sage">chit-chat</em>
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-md">
               Have a project in mind or just want to say hello?
@@ -64,10 +64,6 @@ const ContactSection = () => {
                   </a>
                 ))}
               </div>
-            </div>
-            <div>
-              <p className="editorial-label mb-2">Location</p>
-              <p className="font-display text-lg text-foreground">Boston, MA</p>
             </div>
           </motion.div>
         </div>
