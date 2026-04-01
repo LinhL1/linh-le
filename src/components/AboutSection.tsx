@@ -34,11 +34,11 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <em className="text-foreground">A web developer and designer who enjoys to bring ideas into life.</em>
+            <em className="text-foreground">A web developer and designer, just bringing ideas into life in many forms.</em>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">  
               With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to. 
-              From working with non-profit organizations, student-led inititives, and personal projects, I care about the impact, design, and functionality of my work. 
-              What started with a passion for making fun websites...led to involvements on projects in AI/ML, cyber, and of course, more web projects.
+              From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work. 
+              What started with a passion for making fun websites...led to involvement on projects in AI/ML, cyber, and of course, more web projects.
               
             </p>
 
