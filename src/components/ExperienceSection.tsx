@@ -9,25 +9,32 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Senior Developer",
-    company: "Company Name",
-    period: "2022 — Present",
+    role: "Security Intelligence & Software Intern",
+    company: "INNetwork",
+    period: "JAN 2026 — PRESENT",
     description:
-      "Led frontend development for key products, focusing on performance and elegant user interfaces.",
+      "Authored cybersecuirty focused policy breifs and developed an media literacy interactive web application using React.",
   },
   {
-    role: "Frontend Developer",
+    role: "",
     company: "Agency Name",
     period: "2020 — 2022",
     description:
       "Built interactive web experiences for clients across various industries with modern frameworks.",
   },
   {
-    role: "Junior Developer",
-    company: "Startup Name",
-    period: "2018 — 2020",
+    role: "Front-end Devlopment",
+    company: "Building-U",
+    period: "2023 — 2024",
     description:
-      "Developed features and collaborated closely with design teams to ship polished products.",
+      "Collaborated in the development of a mock user admin panel. Supported conducting peer code reviews for new interns.",
+  },
+   {
+    role: "Video Production",
+    company: "Malden City Hall",
+    period: "Summer 2023 — 2024",
+    description:
+      "Produced short-form and long-form visual media for the city of Malden. Collaborated on projects, hosted interviews and handled camera/editing work. Video editing via Final Cut Pro.",
   },
 ];
 

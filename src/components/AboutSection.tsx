@@ -35,21 +35,24 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              I'm a developer and designer who believes in the power of simplicity.
-              With a background in both creative and technical disciplines, I bring
-              a unique perspective to every project I work on.
+              An indie web developer and designer.
+              With a background in both creative and technical disciplines, I try to put my best foot forward and bring
+              a unique perspective to every project I get to be involved with. It started with a passion for digital design
+              and websites, and now I am actively looking to explore the cyber space and security. 
             </p>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              When I'm not writing code, you'll find me exploring new design trends,
-              reading, or working on personal creative projects.{" "}
-              <em className="text-foreground">Every detail matters.</em>
+              When I'm not developing projects, you'll find me
+              reading, hanging out with my bird, or working on creative projects, with an emphasis on{" "}
+              <em className="text-foreground">functionality and aesthetics.</em>
             </p>
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[
-                { label: "Focus", value: "Frontend Development" },
-                { label: "Based in", value: "Your City" },
-                { label: "Experience", value: "X+ Years" },
-                { label: "Education", value: "Your Degree" },
+                { label: "Focus", value: "Full-stack Web Development, Cybersecurity" },
+                { label: "Based in", value: "Boston, MA" },
+                { label: "Education", value: "B.S in Computer Science" },
+                { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS" },
+
+
               ].map((item) => (
                 <div key={item.label}>
                   <p className="editorial-label mb-1">{item.label}</p>

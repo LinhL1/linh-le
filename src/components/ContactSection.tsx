@@ -23,11 +23,11 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h2 className="section-heading text-foreground mb-8">
-              Let's <em>talk</em>
+              Let's <em>chit-chat</em>
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-md">
               Have a project in mind or just want to say hello?
-              I'd love to hear from you. Drop me a line and I'll get back to you soon.
+              I'd love to hear from you. Drop me a message and I'll get back to you soon :)
             </p>
           </motion.div>
 
@@ -41,19 +41,19 @@ const ContactSection = () => {
             <div>
               <p className="editorial-label mb-2">Email</p>
               <a
-                href="mailto:hello@example.com"
+                href="mailto: lvnh.le11@gmail.com"
                 className="font-display text-xl text-foreground hover:text-muted-foreground transition-colors"
               >
-                hello@example.com
+                lvnh.le11@gmail.com
               </a>
             </div>
             <div>
               <p className="editorial-label mb-2">Social</p>
               <div className="space-y-2">
                 {[
-                  { name: "GitHub", url: "#" },
-                  { name: "LinkedIn", url: "#" },
-                  { name: "Twitter / X", url: "#" },
+                  { name: "GitHub", url: "https://github.com/LinhL1" },
+                  { name: "LinkedIn", url: "https://www.linkedin.com/in/linh-le-50751024b/" },
+                  { name: "Substack", url: "https://substack.com/@liinh" },
                 ].map((social) => (
                   <a
                     key={social.name}
@@ -67,7 +67,7 @@ const ContactSection = () => {
             </div>
             <div>
               <p className="editorial-label mb-2">Location</p>
-              <p className="font-display text-lg text-foreground">Your City, Country</p>
+              <p className="font-display text-lg text-foreground">Boston, MA</p>
             </div>
           </motion.div>
         </div>

@@ -12,35 +12,51 @@ interface Project {
 // ── Easily plug in your projects here ──
 const projects: Project[] = [
   {
-    title: "Project Alpha",
-    category: "Web Application",
+    title: "She Drive",
+    category: "Mobile Application",
     description:
-      "A full-stack platform built with modern technologies, focused on clean UX and performance.",
-    year: "2024",
+      "A collaborative side project: A full-stack mobile app built with Flutter and Laravel, focused on providing women with a safe and flexible transportation option.",
+    year: "2026",
     link: "#",
   },
   {
-    title: "Project Beta",
-    category: "Design System",
+    title: "INformed",
+    category: "Gamified Eduational Web App",
     description:
-      "Comprehensive component library and design tokens for a consistent brand experience.",
-    year: "2023",
+      "A react web/mobile application, providing a gamified learning experiance to educate inidviduals on misinformation and digital media.",
+    year: "2026",
     link: "#",
   },
   {
-    title: "Project Gamma",
-    category: "Mobile App",
+    title: "Me, My-Shelf, and I",
+    category: "Creative Web App",
     description:
-      "Cross-platform mobile experience with fluid animations and offline-first architecture.",
-    year: "2023",
+      "A creative personal digital reading nook to provide a fun and engaging way to track read books, reading goals, and notes.",
+    year: "2026",
     link: "#",
   },
   {
-    title: "Project Delta",
-    category: "Creative",
+    title: "PhishSTX",
+    category: "AI/ML",
     description:
-      "An experimental interactive piece exploring generative art and data visualization.",
-    year: "2022",
+      "An AI4ALL collaborative project: Trained ML models to developed an email phishing decector using NLP techniques. 97% accuracy",
+    year: "2026",
+    link: "#",
+  },
+  {
+    title: "Impromptu",
+    category: "Hackathon Project: Best Gemini API Integration",
+    description:
+      "Joint project built in 36 hours. Inspired by fostering connection, exploration, and mini side quests, we wanted to create a fun and interactive way for you to stay in touch and connected through a simple daily scavengure hunt.",
+    year: "2026",
+    link: "#",
+  },
+  {
+    title: "CodePath: CYB",
+    category: "Cybersecurity",
+    description:
+      "",
+    year: "2026",
     link: "#",
   },
 ];

@@ -34,9 +34,9 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="font-display text-lg font-semibold tracking-tight text-foreground"
+          className="editorial-label"
         >
-          Portfolio
+          LINH LE
         </button>
         <div className="flex items-center gap-8">
           {navItems.map((item) => (
