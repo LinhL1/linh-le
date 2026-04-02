@@ -1,9 +1,6 @@
 const Footer = () => (
-  <footer className="py-12 border-t border-border">
-    <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p className="font-sans text-xs text-muted-foreground">
-        © {new Date().getFullYear()} — All rights reserved
-      </p>
+  <footer className="py-5 border-t border-border">
+    <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-center items-center gap-4">
       <p className="font-display italic text-sm text-muted-foreground">
         Made with love
       </p>
