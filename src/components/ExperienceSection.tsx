@@ -20,19 +20,19 @@ const experiences: ExperienceItem[] = [
     company: "Project Safeweb",
     period: "AUG 2025 - JAN 2026",
     description:
-      "Built interactive web experiences for clients across various industries with modern frameworks.",
+      "Researched and identified security and cyber-safety organizations to support partnership development and funding opportunities.",
   },
   {
     role: "Front-end Devlopment",
     company: "Building-U",
-    period: "2023 — 2024",
+    period: "AUG 2024 — AUG 2025",
     description:
       "Collaborated in the development of a mock user admin panel. Supported conducting peer code reviews for new interns.",
   },
    {
     role: "Video Production",
     company: "Malden City Hall",
-    period: "Summer 2023 — 2024",
+    period: "SUMMER 2023 — 2024",
     description:
       "Produced short-form and long-form visual media for the city of Malden. Collaborated on projects, hosted interviews and handled camera/editing work. Video editing via Final Cut Pro.",
   },

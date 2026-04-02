@@ -9,7 +9,7 @@ interface Project {
   link?: string;
 }
 
-// ── Easily plug in your projects here ──
+// ── projects here ──
 const projects: Project[] = [
   {
     title: "She Drive",
@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "A collaborative side project: A full-stack mobile app built with Flutter and Laravel, focused on providing women with a safe and flexible transportation option.",
     year: "2026",
-    link: "#",
+    link: "https://github.com/haliait/SheDrive",
   },
   {
     title: "INformed",
@@ -25,7 +25,7 @@ const projects: Project[] = [
     description:
       "A react web/mobile application, providing a gamified learning experiance to educate inidviduals on misinformation and digital media.",
     year: "2026",
-    link: "#",
+    link: "https://github.com/LinhL1/INformed",
   },
   {
     title: "Me, My-Shelf, and I",
@@ -33,7 +33,7 @@ const projects: Project[] = [
     description:
       "A creative personal digital reading nook to track read books, reading goals, and notes.",
     year: "2026",
-    link: "#",
+    link: "https://just-myshelf.lovable.app/",
   },
   {
     title: "PhishSTX",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     description:
       "An AI4ALL collaborative project: Trained ML models to developed an email phishing decector using NLP techniques. 97% accuracy",
     year: "2026",
-    link: "#",
+    link: "https://phish-stx-deda6n8vytgxa5jzqmmref.streamlit.app/",
   },
   {
     title: "Impromptu",
@@ -49,7 +49,7 @@ const projects: Project[] = [
     description:
       "Joint project built in 36 hours. Inspired by fostering connection, exploration, and mini side quests, we wanted to create a fun and interactive way for you to stay in touch and connected through a simple daily scavengure hunt.",
     year: "2026",
-    link: "#",
+    link: "https://github.com/LinhL1/Impromptu",
   },
   {
     title: "CodePath: CYB",
