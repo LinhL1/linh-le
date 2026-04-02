@@ -45,7 +45,7 @@ const HeroSection = () => {
             >
               <button
                 onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-                className="font-sans text-xs uppercase tracking-[0.15em] text-foreground border-b border-foreground pb-1 hover:text-muted-foreground hover:border-muted-foreground transition-colors"
+                className="font-sans text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground hover:border-muted-foreground transition-colors"
               >
                 View Work
               </button>

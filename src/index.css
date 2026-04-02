@@ -55,7 +55,7 @@
 
   .dark {
     --sage: 145 18% 50%;
-    
+
     --background: 160 25% 7%;
     --foreground: 40 25% 90%;
 
@@ -152,5 +152,52 @@
   * {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--border)) hsl(var(--background));
+  }
+}
+
+/* Cusor effect */
+@layer base {
+  * {
+    cursor: none !important;
+  }
+
+  #cursor-dot {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: hsl(var(--foreground));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
+  }
+
+  #cursor-ring {
+    position: fixed;
+    width: 22px;
+    height: 22px;
+    border: 1px solid hsl(var(--foreground));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    background: hsl(var(--background));
+    transition: width 0.25s ease, height 0.25s ease;
+  }
+
+  #cursor-ring.hovering {
+    width: 38px;
+    height: 38px;
+  }
+
+  #cursor-dot.hovering {
+    opacity: 0;
+  }
+
+  #cursor-ring.clicking {
+    width: 16px;
+    height: 16px;
   }
 }
