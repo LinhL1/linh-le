@@ -155,7 +155,7 @@
   }
 }
 
-/* Cusor effect */
+/* Cursor effect */
 @layer base {
   * {
     cursor: none !important;
