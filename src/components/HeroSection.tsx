@@ -31,9 +31,9 @@ const HeroSection = () => {
             >
               <div className="editorial-divider mb-6" />
               <p className="font-body text-lg leading-relaxed text-muted-foreground">
-                A creative developer. Life-long learner. Friend.
+                Web developer. Life-long learner. Friend.
                 <br />
-                <em className="text-foreground"> Focused on design, interaction, and secuirty.</em>
+                <em className="text-foreground"> Focused on design, interaction, and security.</em>
               </p>
             </motion.div>
 
