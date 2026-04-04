@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import myPhoto from "@/assets/me2.jpg";
 
 const AboutSection = () => {
   return (
@@ -22,9 +23,28 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <h2 className="section-heading text-foreground">
+            <h2 className="section-heading text-foreground mb-10">
               A bit <em className="text-sage">about me</em>
             </h2>
+
+            {/* Photo — styled to match Hero */}
+            <div className="relative inline-block mt-10 ml-3">
+              {/* Decorative frame offset */}
+              <div className="absolute -top-4 -left-4 w-full h-full border border-foreground/20" />
+              <div className="w-64 h-80 md:w-72 md:h-96 bg-card border border-border overflow-hidden">
+                <img
+                  src={myPhoto}
+                  alt="Linh"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Small editorial detail */}
+              <div className="absolute -bottom-6 -right-6 bg-background border border-border px-4 py-2">
+                <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  :)
+                </p>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div
@@ -35,17 +55,18 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <em className="text-foreground">A web developer and designer, just bringing ideas into life in many forms.</em>
-            <p className="font-body text-lg leading-relaxed text-muted-foreground">  
-              With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to. 
-              From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work. 
-              What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects. 
+            <p className="font-body text-lg leading-relaxed text-muted-foreground">
+              With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to.
+              From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work.
+              What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects.
               I love seeing where curiosity leads me.
             </p>
 
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              When I'm not developing projects, you'll find me 
-              reading, journaling, or doodling. 
+              When I'm not developing projects, you'll find me
+              reading, journaling, or doodling.
             </p>
+
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[
                 { label: "Focus", value: "Front-end Development" },
@@ -53,8 +74,6 @@ const AboutSection = () => {
                 { label: "Based in", value: "Boston, MA" },
                 { label: "Education", value: "B.S in Computer Science" },
                 { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS, Figma" },
-
-
               ].map((item) => (
                 <div key={item.label}>
                   <p className="editorial-label mb-1">{item.label}</p>
