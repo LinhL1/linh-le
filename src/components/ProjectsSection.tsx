@@ -12,6 +12,14 @@ interface Project {
 // ── projects here ──
 const projects: Project[] = [
   {
+    title: "INformed",
+    category: "Gamified Educational Web App",
+    description:
+      "A React web/mobile application, providing a gamified learning experience to educate individuals on misinformation and digital media.",
+    year: "2026",
+    link: "https://github.com/LinhL1/INformed",
+  },
+  {
     title: "She Drive",
     category: "Mobile Application",
     description:
@@ -20,18 +28,10 @@ const projects: Project[] = [
     link: "https://github.com/haliait/SheDrive",
   },
   {
-    title: "INformed",
-    category: "Gamified Eduational Web App",
-    description:
-      "A react web/mobile application, providing a gamified learning experiance to educate inidviduals on misinformation and digital media.",
-    year: "2026",
-    link: "https://github.com/LinhL1/INformed",
-  },
-  {
     title: "Me, My-Shelf, and I",
     category: "Creative Web App",
     description:
-      "A creative personal digital reading nook to track read books, reading goals, and notes.",
+      "A React personal digital reading nook to track read books, reading goals, and notes.",
     year: "2026",
     link: "https://just-myshelf.lovable.app/",
   },
@@ -39,7 +39,7 @@ const projects: Project[] = [
     title: "PhishSTX",
     category: "AI/ML",
     description:
-      "An AI4ALL collaborative project: Trained ML models to developed an email phishing decector using NLP techniques. 97% accuracy",
+      "An AI4ALL collaborative project: Trained ML models to develop an email phishing detector using NLP techniques.",
     year: "2026",
     link: "https://phish-stx-deda6n8vytgxa5jzqmmref.streamlit.app/",
   },
@@ -47,17 +47,9 @@ const projects: Project[] = [
     title: "Impromptu",
     category: "Hackathon Project: Best Gemini API Integration",
     description:
-      "Joint project built in 36 hours. Inspired by fostering connection, exploration, and mini side quests, we wanted to create a fun and interactive way for you to stay in touch and connected through a simple daily scavengure hunt.",
+      "Joint project built in 36 hours using React and Firebase. Inspired by fostering connection, exploration, and mini side quests, we wanted to create a fun and interactive way for you to stay in touch and connected through a simple daily scavenger hunt.",
     year: "2026",
     link: "https://github.com/LinhL1/Impromptu",
-  },
-  {
-    title: "CodePath: CYB",
-    category: "Cybersecurity",
-    description:
-      "",
-    year: "2026",
-    link: "#",
   },
 ];
 

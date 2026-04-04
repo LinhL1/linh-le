@@ -10,31 +10,31 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     role: "Security Intelligence & Software Intern",
-    company: "INNetwork",
+    company: "IN Network",
     period: "JAN 2026 — PRESENT",
     description:
-      "Authored cybersecuirty focused policy breifs and developed an media literacy interactive web application using React.",
+      "Developed an interactive media literacy web app using React. Authored cybersecurity-focused policy briefs and contributed to funding initiatives.",
   },
   {
     role: "Grant Writer",
     company: "Project Safeweb",
     period: "AUG 2025 - JAN 2026",
     description:
-      "Researched and identified security and cyber-safety organizations to support partnership development and funding opportunities.",
+      "Researched grants and cybersecurity organizations to support partnerships and funding opportunities.",
   },
   {
-    role: "Front-end Devlopment",
+    role: "Front-end Development",
     company: "Building-U",
     period: "AUG 2024 — AUG 2025",
     description:
-      "Collaborated in the development of a mock user admin panel. Supported conducting peer code reviews for new interns.",
+      "Built a mock user admin panel with HTML, CSS, and JavaScript. Conducted peer code reviews to improve code quality for new interns.",
   },
    {
     role: "Video Production",
     company: "Malden City Hall",
     period: "SUMMER 2023 — 2024",
     description:
-      "Produced short-form and long-form visual media for the city of Malden. Collaborated on projects, hosted interviews and handled camera/editing work. Video editing via Final Cut Pro.",
+      "Produced short/long-form media for the City of Malden, including interviews and community projects. Managed filming and editing (Final Cut Pro) to deliver polished content.",
   },
 ];
 

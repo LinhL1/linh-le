@@ -38,8 +38,8 @@ const AboutSection = () => {
             <p className="font-body text-lg leading-relaxed text-muted-foreground">  
               With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to. 
               From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work. 
-              What started with a passion for making fun websites...led to involvement on projects in AI/ML, cyber, and of course, more web projects.
-              
+              What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects. 
+              I love seeing where curiosity leads me.
             </p>
 
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
@@ -48,10 +48,11 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[
-                { label: "Focus", value: "Full-stack Web Development, Cybersecurity" },
+                { label: "Focus", value: "Front-end Development" },
+                { label: "Interest", value: "Full-stack Development, UI/UX Design, Web Security" },
                 { label: "Based in", value: "Boston, MA" },
                 { label: "Education", value: "B.S in Computer Science" },
-                { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS" },
+                { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS, Figma" },
 
 
               ].map((item) => (
