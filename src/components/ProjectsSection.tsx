@@ -6,6 +6,7 @@ import sheDriveImg from "@/assets/projects/shedrive.png";
 import impromptu from "@/assets/projects/impromptu.png";
 import mmi from "@/assets/projects/mmi.png";
 import phishstx from "@/assets/projects/phishstx.png";
+import informed from "@/assets/projects/informed.png";
 
 
 interface Project {
@@ -25,7 +26,7 @@ const projects: Project[] = [
       "A React web/mobile application, providing a gamified learning experience to educate individuals on misinformation and digital media.",
     year: "2026",
     link: "https://github.com/LinhL1/INformed",
-    image: "",
+    image: informed,
   },
   {
     title: "She Drive",
