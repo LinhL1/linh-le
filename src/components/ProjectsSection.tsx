@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "INformed",
     category: "Gamified Educational Web App",
     description:
-      "A React web/mobile application, providing a gamified learning experience to educate individuals on misinformation and digital media.",
+      "A React web/mobile application for the IN Network, providing a gamified learning experience to educate individuals on misinformation and digital media.",
     year: "2026",
     link: "https://github.com/LinhL1/INformed",
     image: informed,
