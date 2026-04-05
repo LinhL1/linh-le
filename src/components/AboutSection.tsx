@@ -27,24 +27,7 @@ const AboutSection = () => {
               A bit <em className="text-sage">about me</em>
             </h2>
 
-            {/* Photo — styled to match Hero */}
-            <div className="relative inline-block mt-10 ml-3">
-              {/* Decorative frame offset */}
-              <div className="absolute -top-4 -left-4 w-full h-full border border-foreground/20" />
-              <div className="w-64 h-80 md:w-72 md:h-96 bg-card border border-border overflow-hidden">
-                <img
-                  src={myPhoto}
-                  alt="Linh"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Small editorial detail */}
-              <div className="absolute -bottom-6 -right-6 bg-background border border-border px-4 py-2">
-                <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                  :)
-                </p>
-              </div>
-            </div>
+            
           </motion.div>
 
           <motion.div
