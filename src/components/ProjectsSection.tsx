@@ -16,6 +16,8 @@ interface Project {
   year: string;
   link?: string;
   image?: string;
+  tools?: string[];
+
 }
 
 const projects: Project[] = [
@@ -23,37 +25,43 @@ const projects: Project[] = [
     title: "INformed",
     category: "Gamified Educational Web App",
     description:
-      "A React web/mobile application for the IN Network, providing a gamified learning experience to educate individuals on misinformation and digital media.",
+      "A web/mobile application for the IN Network, providing a gamified learning experience to educate individuals on misinformation and digital media.",
     year: "2026",
     link: "https://github.com/LinhL1/INformed",
     image: informed,
+    tools: ["React", "Framer Motion", "Tailwind CSS"]
   },
   {
     title: "She Drive",
     category: "Mobile Application",
     description:
-      "A collaborative side project: A full-stack mobile app built with Flutter and Laravel, focused on providing women with a safe and flexible transportation option.",
+      "A collaborative side project: A full-stack mobile app focused on providing women with a safe and flexible transportation option.",
     year: "2026",
     link: "https://github.com/haliait/SheDrive",
     image: sheDriveImg,
+    tools: ["Flutter", "Laravel", "Google Maps API", "MySQL"]
+
   },
   {
     title: "Me, My-Shelf, and I",
     category: "Creative Web App",
     description:
-      "A React personal digital reading nook to track read books, reading goals, and notes.",
+      "A cozy digital reading nook to track read books, reading goals, and notes. All you need for an enjoyable reading session in one place.",
     year: "2026",
     link: "https://just-myshelf.lovable.app/",
     image: mmi,
+    tools: ["Lovable", "React", "Supabase"]
   },
    {
     title: "Impromptu",
     category: "Hackathon Project: Best Gemini API Integration",
     description:
-      "Joint hackathon project built using React and Firebase. A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
+      "Joint hackathon project: A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
     year: "2026",
     link: "https://github.com/LinhL1/Impromptu",
     image: impromptu,
+    tools: ["React", "Firebase", "Gemini API", "ElevenLabs API"]
+
   },
   {
     title: "PhishSTX",
@@ -63,6 +71,8 @@ const projects: Project[] = [
     year: "2026",
     link: "https://phish-stx-deda6n8vytgxa5jzqmmref.streamlit.app/",
     image: phishstx,
+    tools: ["Python", "Pandas", "Numpy", "Scikit-learn", "Streamlit"]
+
   },
  
 ];
@@ -117,7 +127,7 @@ const ProjectsSection = () => {
 
         {/* Section label + divider */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
@@ -218,6 +228,17 @@ const ProjectsSection = () => {
                   <p className="font-body text-sm text-muted-foreground leading-relaxed">
                     {p.description}
                   </p>
+                  <div className="mt-5 flex flex-wrap gap-x-3 gap-y-1">
+
+                  {p.tools?.map((tool) => (
+                    <span
+                      key={tool}
+                      className="font-sans text-[10px] uppercase tracking-widest text-foreground/70"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
 
                   {/* Accent line */}
                   <motion.div

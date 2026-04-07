@@ -26,6 +26,7 @@ export default {
         foreground: "hsl(var(--foreground))",
         butter: 'hsl(var(--butter))',
         sage: 'hsl(var(--sage))',
+        plum: 'hsl(var(--plum))',
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
