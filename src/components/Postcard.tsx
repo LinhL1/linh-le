@@ -12,7 +12,6 @@ const Postcard = () => {
   const cardRef = useRef(null);
   const [cardHeight, setCardHeight] = useState("auto");
 
-  // Measure card height to keep consistent after send
   useEffect(() => {
     if (cardRef.current) {
       setCardHeight(cardRef.current.offsetHeight + "px");
@@ -75,7 +74,7 @@ const Postcard = () => {
             backgroundColor: "hsl(var(--card))",
             padding: "20px 20px 22px 20px",
             borderRadius: "1px",
-            minHeight: cardHeight, // ensures height stays the same after send
+            minHeight: cardHeight, // FIX the card shape for consistency 
             transition: "min-height 0.2s",
           }}
         >
@@ -111,7 +110,7 @@ const Postcard = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: stamped ? "hsl(var(--butter))" : "transparent",
+                backgroundColor: stamped ? "hsl(var(--plum))" : "transparent",
                 transition: "background 0.3s",
                 boxShadow: "0 0 0 3px hsl(var(--card)), 0 0 0 4px hsl(var(--border))",
                 flexShrink: 0,
@@ -126,10 +125,10 @@ const Postcard = () => {
                   width="24"
                   height="20"
                   rx="1"
-                  stroke="hsl(var(--muted-foreground))"
+                  stroke="hsl(var(--background))"
                   strokeWidth="1"
                 />
-                <path d="M1 5 L13 13 L25 5" stroke="hsl(var(--muted-foreground))" strokeWidth="1" />
+                <path d="M1 5 L13 13 L25 5" stroke="hsl(var(--background))" strokeWidth="1" />
               </svg>
 
               {/* Optional stamped overlay */}
@@ -176,7 +175,7 @@ const Postcard = () => {
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Notes..."
+                    placeholder="Hey, how's it going...?"
                     rows={4}
                     style={{
                       width: "100%",

@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section id="about" className="py-32">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <motion.div
             className="md:col-span-5"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -37,9 +37,9 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <em className="text-foreground">A web developer and designer, just bringing ideas into life in many forms.</em>
+            <em className="text-foreground">Web developer and designer, just bringing ideas into life in many forms.</em>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              With a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to.
+              As an undergraduate CS student with a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to.
               From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work.
               What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects.
               I love seeing where curiosity leads me.

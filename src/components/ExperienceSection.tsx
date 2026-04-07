@@ -43,9 +43,8 @@ const ExperienceSection = () => {
     <section id="experience" className="py-32">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
           <p className="editorial-label mb-4">02 — Experience</p>
