@@ -46,6 +46,15 @@ const projects: Project[] = [
     link: "https://just-myshelf.lovable.app/",
     image: mmi,
   },
+   {
+    title: "Impromptu",
+    category: "Hackathon Project: Best Gemini API Integration",
+    description:
+      "Joint hackathon project built using React and Firebase. A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
+    year: "2026",
+    link: "https://github.com/LinhL1/Impromptu",
+    image: impromptu,
+  },
   {
     title: "PhishSTX",
     category: "AI/ML",
@@ -55,15 +64,7 @@ const projects: Project[] = [
     link: "https://phish-stx-deda6n8vytgxa5jzqmmref.streamlit.app/",
     image: phishstx,
   },
-  {
-    title: "Impromptu",
-    category: "Hackathon Project: Best Gemini API Integration",
-    description:
-      "Joint project built in 36 hours using React and Firebase. A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
-    year: "2026",
-    link: "https://github.com/LinhL1/Impromptu",
-    image: impromptu,
-  },
+ 
 ];
 
 const TRANSITION = { duration: 0.65, ease: [0.16, 1, 0.3, 1] as const };

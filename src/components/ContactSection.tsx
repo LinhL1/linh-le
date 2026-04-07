@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Postcard from "./Postcard";
 
 const ContactSection = () => {
   return (
@@ -15,6 +16,7 @@ const ContactSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+          {/* Left: heading + blurb + socials */}
           <motion.div
             className="md:col-span-6"
             initial={{ opacity: 0, y: 40 }}
@@ -25,46 +27,51 @@ const ContactSection = () => {
             <h2 className="section-heading text-foreground mb-8">
               Let's <em className="text-sage">chit-chat</em>
             </h2>
-            <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-md">
+            <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-md mb-10">
               Have a project in mind or just want to say hello?
               I'd love to hear from you. Drop me a message and I'll get back to you soon :)
             </p>
+
+            <div className="space-y-8">
+              <div>
+                <p className="editorial-label mb-2">Email</p>
+                <a
+                  href="mailto:lvnh.le11@gmail.com"
+                  className="font-display text-xl text-foreground hover:text-muted-foreground transition-colors"
+                >
+                  lvnh.le11@gmail.com
+                </a>
+              </div>
+              <div>
+                <p className="editorial-label mb-2">Social</p>
+                <div className="space-y-2">
+                  {[
+                    { name: "GitHub", url: "https://github.com/LinhL1" },
+                    { name: "LinkedIn", url: "https://www.linkedin.com/in/linh-le-50751024b/" },
+                    { name: "Substack", url: "https://substack.com/@liinh" },
+                  ].map((social) => (
+                    <a
+                      key={social.name}
+                      href={social.url}
+                      className="block font-display text-lg text-foreground hover:text-muted-foreground hover:translate-x-1 transition-all duration-200"
+                    >
+                      {social.name} →
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
           </motion.div>
 
+          {/* Right: Postcard */}
           <motion.div
-            className="md:col-span-6 space-y-8"
+            className="md:col-span-6 flex items-start"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div>
-              <p className="editorial-label mb-2">Email</p>
-              <a
-                href="mailto: lvnh.le11@gmail.com"
-                className="font-display text-xl text-foreground hover:text-muted-foreground transition-colors"
-              >
-                lvnh.le11@gmail.com
-              </a>
-            </div>
-            <div>
-              <p className="editorial-label mb-2">Social</p>
-              <div className="space-y-2">
-                {[
-                  { name: "GitHub", url: "https://github.com/LinhL1" },
-                  { name: "LinkedIn", url: "https://www.linkedin.com/in/linh-le-50751024b/" },
-                  { name: "Substack", url: "https://substack.com/@liinh" },
-                ].map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    className="block font-display text-lg text-foreground hover:text-muted-foreground hover:translate-x-1 transition-all duration-200"
-                  >
-                    {social.name} →
-                  </a>
-                ))}
-              </div>
-            </div>
+            <Postcard />
           </motion.div>
         </div>
       </div>
