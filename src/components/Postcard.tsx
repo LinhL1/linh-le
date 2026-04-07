@@ -126,10 +126,10 @@ const Postcard = () => {
                   width="24"
                   height="20"
                   rx="1"
-                  stroke="hsl(var(--foreground))"
+                  stroke="hsl(var(--muted-foreground))"
                   strokeWidth="1"
                 />
-                <path d="M1 5 L13 13 L25 5" stroke="hsl(var(--foreground))" strokeWidth="1" />
+                <path d="M1 5 L13 13 L25 5" stroke="hsl(var(--muted-foreground))" strokeWidth="1" />
               </svg>
 
               {/* Optional stamped overlay */}
@@ -249,7 +249,7 @@ const Postcard = () => {
                         border: "none",
                         outline: "none",
                         fontSize: "13px",
-                        color: "hsl(var(--foreground))",
+                        color: "hsl(var(--muted-foreground))",
                         caretColor: "hsl(var(--sage))",
                       }}
                     />
