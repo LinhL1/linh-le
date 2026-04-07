@@ -144,7 +144,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          Selected <em>work</em>
+          My <em>projects</em>
         </motion.h2>
 
         {/* Card stack */}
@@ -267,7 +267,7 @@ const ProjectsSection = () => {
                   width: i === current ? "20px" : "5px",
                   backgroundColor:
                     i === current
-                      ? "hsl(var(--foreground))"
+                      ? "hsl(var(--butter))"
                       : "hsl(var(--border))",
                 }}
               />
