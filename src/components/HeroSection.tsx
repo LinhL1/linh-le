@@ -14,7 +14,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-[0.9] tracking-tight text-foreground">
+              <h1 className="font-display text-5xl sm:text-5xl md:text-4xl lg:text-8xl font-bold leading-[0.9] tracking-tight text-foreground">
                 Fancy seeing you here,
                 <br />
                 I'm 
