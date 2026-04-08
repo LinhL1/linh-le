@@ -92,6 +92,7 @@ const ProjectsSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const locked = useRef(false);
   const accum = useRef(0);
+  const touchStartY = useRef(0);
 
   const goTo = useCallback(
     (next: number) => {
@@ -108,6 +109,8 @@ const ProjectsSection = () => {
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
+
+    // Wheel event for desktop
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
       accum.current += e.deltaY;
@@ -117,8 +120,38 @@ const ProjectsSection = () => {
         accum.current = 0;
       }
     };
+
+    // Touch events for mobile
+    const onTouchStart = (e: TouchEvent) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      e.preventDefault();
+      const touchEndY = e.touches[0].clientY;
+      const diff = touchStartY.current - touchEndY;
+      accum.current += diff;
+
+      if (Math.abs(accum.current) > 50) {
+        if (accum.current > 0 && current < projects.length - 1) {
+          goTo(current + 1);
+        } else if (accum.current < 0 && current > 0) {
+          goTo(current - 1);
+        }
+        accum.current = 0;
+      }
+      touchStartY.current = touchEndY;
+    };
+
     el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
+    el.addEventListener("touchstart", onTouchStart, { passive: true });
+    el.addEventListener("touchmove", onTouchMove, { passive: false });
+
+    return () => {
+      el.removeEventListener("wheel", onWheel);
+      el.removeEventListener("touchstart", onTouchStart);
+      el.removeEventListener("touchmove", onTouchMove);
+    };
   }, [current, goTo]);
 
   return (

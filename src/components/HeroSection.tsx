@@ -14,7 +14,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               
-              <h1 className="font-display text-2xl md:text-2xl lg:text-8xl font-bold leading-[0.9] tracking-tight text-foreground">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-[0.9] tracking-tight text-foreground">
                 Fancy seeing you here,
                 <br />
                 I'm 
@@ -60,7 +60,7 @@ const HeroSection = () => {
 
           {/* Right column — Photo placeholder */}
           <motion.div
-            className="md:col-span-5 flex justify-end"
+            className="md:col-span-5 flex justify-center md:justify-end mt-8 md:mt-0"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
@@ -68,7 +68,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Decorative frame offset */}
               <div className="absolute -top-4 -left-4 w-full h-full border border-foreground/20" />
-              <div className="w-72 h-96 md:w-80 md:h-[28rem] bg-card border border-border overflow-hidden flex items-center justify-center">
+              <div className="w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[28rem] bg-card border border-border overflow-hidden flex items-center justify-center">
                  <img
                   src={myPhoto}
                   alt="Your name"
