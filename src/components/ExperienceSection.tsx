@@ -34,7 +34,7 @@ const experiences: ExperienceItem[] = [
     company: "Malden City Hall",
     period: "SUMMER 2023 — 2024",
     description:
-      "Produced short/long-form media for the City of Malden, including interviews and community projects. Managed filming and editing (Final Cut Pro) to deliver polished content.",
+      "Produced short/long-form media for the City of Malden, including interviews and community projects. Managed filming and editing (Final Cut Pro).",
   },
 ];
 
