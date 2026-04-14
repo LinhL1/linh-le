@@ -18,12 +18,12 @@ const experiences: ExperienceItem[] = [
   {
     role: "Grant Writer",
     company: "Project Safeweb",
-    period: "AUG 2025 - JAN 2026",
+    period: "AUG 2025 — JAN 2026",
     description:
       "Researched grants and cybersecurity organizations to support partnerships and funding opportunities.",
   },
   {
-    role: "Front-end Development",
+    role: "Front-end Developer",
     company: "Building-U",
     period: "AUG 2024 — AUG 2025",
     description:
