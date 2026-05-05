@@ -47,7 +47,7 @@ const projects: Project[] = [
     title: "She Drive",
     category: "Mobile Application",
     description:
-      "A collaborative side project: A full-stack mobile app focused on providing women with a safe and flexible transportation option.",
+      "A collaborative side project: A full-stack mobile app focused on providing women with a safe and flexible transportation option (Morocco based)",
     year: "2026",
     link: "https://github.com/haliait/SheDrive",
     image: sheDriveImg,
