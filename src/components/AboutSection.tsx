@@ -39,7 +39,7 @@ const AboutSection = () => {
           >
             <em className="text-foreground">Web developer and designer, just bringing ideas into life in many forms.</em>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              As an undergraduate CS student with a background in both creative and technical disciplines, I try to put my best foot forward and bring a unique perspective to the projects I contribute to.
+              As an undergraduate CS student with a background in both creative and technical disciplines, I try to bring a unique perspective to the projects I contribute to.
               From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work.
               What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects.
               I love seeing where curiosity leads me.
