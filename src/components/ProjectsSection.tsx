@@ -7,6 +7,8 @@ import impromptu from "@/assets/projects/impromptu.png";
 import mmi from "@/assets/projects/mmi.png";
 import phishstx from "@/assets/projects/phishstx.png";
 import informed from "@/assets/projects/informed.png";
+import jot from "@/assets/projects/jot.png";
+
 
 
 interface Project {
@@ -21,6 +23,16 @@ interface Project {
 }
 
 const projects: Project[] = [
+   {
+    title: "Jot",
+    category: "Web Browser Extension",
+    description:
+      "Common placing + quick notes extension tool",
+    year: "2026",
+    link: "https://github.com/LinhL1/jot-extension",
+    image: jot,
+    tools: ["JavaScript", "HTML", "CSS"]
+  },
   {
     title: "INformed",
     category: "Gamified Educational Web App",
@@ -29,7 +41,7 @@ const projects: Project[] = [
     year: "2026",
     link: "https://github.com/LinhL1/INformed",
     image: informed,
-    tools: ["React", "Framer Motion", "Tailwind CSS"]
+    tools: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"]
   },
   {
     title: "She Drive",
