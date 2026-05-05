@@ -39,7 +39,7 @@ const projects: Project[] = [
     description:
       "A web/mobile application for the IN Network, providing a gamified learning experience to educate individuals on misinformation and digital media.",
     year: "2026",
-    link: "https://github.com/LinhL1/INformed",
+    link: "https://innetwork-informed.vercel.app/",
     image: informed,
     tools: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"]
   },
