@@ -38,17 +38,28 @@ const projects: Project[] = [
     category: "Gamified Educational Web App",
     description:
       "A web/mobile application for the IN Network, providing a gamified learning experience to educate individuals on misinformation and digital media.",
-    year: "2026",
+    year: "MAY 2026",
     link: "https://innetwork-informed.vercel.app/",
     image: informed,
     tools: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"]
+  },
+    {
+    title: "Impromptu",
+    category: "Hackathon Project: Best Gemini API Integration",
+    description:
+      "Joint hackathon project: A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
+    year: "FEB 2026",
+    link: "https://github.com/LinhL1/Impromptu",
+    image: impromptu,
+    tools: ["React", "Firebase", "Gemini API", "ElevenLabs API"]
+
   },
   {
     title: "She Drive",
     category: "Mobile Application",
     description:
       "A collaborative side project: A full-stack mobile app focused on providing women with a safe and flexible transportation option (Morocco based)",
-    year: "2026",
+    year: "JAN 2026",
     link: "https://github.com/haliait/SheDrive",
     image: sheDriveImg,
     tools: ["Flutter", "Laravel", "Google Maps API", "MySQL"]
@@ -59,28 +70,17 @@ const projects: Project[] = [
     category: "Creative Web App",
     description:
       "A cozy digital reading nook to track read books, reading goals, and notes. All you need for an enjoyable reading session in one place.",
-    year: "2026",
+    year: "JAN 2026",
     link: "https://just-myshelf.lovable.app/",
     image: mmi,
     tools: ["Lovable", "React", "Supabase"]
-  },
-   {
-    title: "Impromptu",
-    category: "Hackathon Project: Best Gemini API Integration",
-    description:
-      "Joint hackathon project: A fun daily scavenger hunt to keep friends connected through shared mini side quests.",
-    year: "2026",
-    link: "https://github.com/LinhL1/Impromptu",
-    image: impromptu,
-    tools: ["React", "Firebase", "Gemini API", "ElevenLabs API"]
-
   },
   {
     title: "PhishSTX",
     category: "AI/ML",
     description:
       "An AI4ALL collaborative project: Trained ML models to develop an email phishing detector using NLP techniques.",
-    year: "2026",
+    year: "JAN 2026",
     link: "https://phish-stx-deda6n8vytgxa5jzqmmref.streamlit.app/",
     image: phishstx,
     tools: ["Python", "Pandas", "Numpy", "Scikit-learn", "Streamlit"]
@@ -189,7 +189,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          My <em>projects</em>
+        <em>Projects</em>
         </motion.h2>
 
         {/* Card stack */}
