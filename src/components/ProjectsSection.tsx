@@ -8,6 +8,7 @@ import mmi from "@/assets/projects/mmi.png";
 import phishstx from "@/assets/projects/phishstx.png";
 import informed from "@/assets/projects/informed.png";
 import jot from "@/assets/projects/jot.png";
+import progress from "@/assets/projects/progress.png";
 
 
 
@@ -61,7 +62,7 @@ const projects: Project[] = [
       "A collaborative side project: A full-stack mobile app focused on providing women with a safe and flexible transportation option (Morocco based)",
     year: "JAN 2026",
     link: "https://github.com/haliait/SheDrive",
-    image: sheDriveImg,
+    image: progress,
     tools: ["Flutter", "Laravel", "Google Maps API", "MySQL"]
 
   },

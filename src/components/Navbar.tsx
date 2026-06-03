@@ -9,7 +9,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      const about = document.getElementById("about");
+      const threshold = about ? about.offsetTop - 80 : window.innerHeight * 0.9;
+      setScrolled(window.scrollY >= threshold);
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -27,14 +31,18 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : ""
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "top-0 bg-background/80 backdrop-blur-md border-b border-border"
+          : "top-6"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="editorial-label"
+          className={`font-sans text-xs uppercase tracking-[0.2em] transition-colors ${
+            scrolled ? "text-muted-foreground" : "text-background"
+          }`}
         >
           LINH LE
         </button>
@@ -43,14 +51,22 @@ const Navbar = () => {
             <button
               key={item}
               onClick={() => scrollTo(item)}
-              className="hidden md:block font-sans text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors"
+              className={`hidden md:block font-sans text-xs uppercase tracking-[0.15em] transition-colors ${
+                scrolled
+                  ? "text-muted-foreground hover:text-foreground"
+                  : "text-background/70 hover:text-background"
+              }`}
             >
               {item}
             </button>
           ))}
           <button
             onClick={() => setIsDark(!isDark)}
-            className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+            className={`p-2 transition-colors ${
+              scrolled
+                ? "text-muted-foreground hover:text-foreground"
+                : "text-background/70 hover:text-background"
+            }`}
             aria-label="Toggle theme"
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}

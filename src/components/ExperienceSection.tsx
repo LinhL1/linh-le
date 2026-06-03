@@ -9,11 +9,25 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Security Intelligence & Software Intern",
+    role: "Software Development Intern",
     company: "IN Network",
-    period: "JAN 2026 — PRESENT",
+    period: "JUN 2026 — PRESENT",
     description:
-      "Developed an interactive media literacy web app using React. Authored cybersecurity-focused policy briefs and contributed to funding initiatives.",
+      "Plan and organize creative technical projects on national secuirty and related topics.",
+  },
+  {
+    role: "Grant Writing & Technical Intern",
+    company: "IN Network",
+    period: "JAN 2026 — MAY 2026",
+    description:
+      "Supported grant research. Authored cybersecurity-focused policy briefs and contributed to funding initiatives. Developed an interactive media literacy web app using React.",
+  },
+   {
+    role: "Tech Program Instructor",
+    company: "Kids in Tech",
+    period: "NOV 2025 — PRESENT",
+    description:
+      "Organize and lead 2–3 after-school Python programming and STEM sessions for local middle schools in the Boston area.",
   },
   {
     role: "Grant Writer",
@@ -77,7 +91,7 @@ const ExperienceSection = () => {
                 </p>
               </div>
               <div className="md:col-span-4">
-                <h3 className="font-display text-xl font-medium text-foreground">
+                <h3 className="font-display text-2xl font-medium text-foreground">
                   {exp.role}
                 </h3>
                 <p className="font-display italic text-muted-foreground mt-1">

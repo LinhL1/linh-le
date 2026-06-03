@@ -1,4 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400;1,8..60,500&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400;1,8..60,500&family=Inter:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-ExtraLight.otf') format('opentype');
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-ExtLtIta.otf') format('opentype');
+  font-style: italic;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-Light.otf') format('opentype');
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-LightItalic.otf') format('opentype');
+  font-style: italic;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'ZTOskon';
+  src: url('./assets/fonts/oksan/ZT Bros Oskon 90s - Free/ZTBrosOskon90s-Italic.otf') format('opentype');
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
 
 @tailwind base;
 @tailwind components;
@@ -36,7 +84,7 @@
 
     --radius: 0.25rem;
 
-    --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-display: 'ZTOskon', Georgia, 'Times New Roman', serif;
     --font-body: 'Source Serif 4', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
 
