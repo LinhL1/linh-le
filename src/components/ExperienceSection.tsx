@@ -77,7 +77,7 @@ const ExperienceSection = () => {
                 </p>
               </div>
               <div className="md:col-span-4">
-                <h3 className="font-display text-xl font-medium text-foreground">
+                <h3 className="font-display text-2xl font-medium text-foreground">
                   {exp.role}
                 </h3>
                 <p className="font-display italic text-muted-foreground mt-1">

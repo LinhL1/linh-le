@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import myPhoto from "@/assets/me2.jpg";
+import myPhoto from "@/assets/me.jpg";
 
 const AboutSection = () => {
   return (
@@ -27,7 +27,17 @@ const AboutSection = () => {
               A bit <em className="text-sage">about me</em>
             </h2>
 
-            
+            <div className="relative">
+              <div className="absolute mt-8 -left-4 w-2/3 h-full border border-foreground/20" />
+              <div className="w-2/3 mt-8 aspect-[3/4] bg-card border border-border overflow-hidden">
+                <img
+                  src={myPhoto}
+                  alt="Linh Le"
+                  className="mt-11 w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
           </motion.div>
 
           <motion.div
@@ -60,7 +70,7 @@ const AboutSection = () => {
               ].map((item) => (
                 <div key={item.label}>
                   <p className="editorial-label mb-1">{item.label}</p>
-                  <p className="font-display text-sm text-foreground">{item.value}</p>
+                  <p className="font-display text-lg text-foreground">{item.value}</p>
                 </div>
               ))}
             </div>
