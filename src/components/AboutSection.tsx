@@ -29,11 +29,11 @@ const AboutSection = () => {
 
             <div className="relative">
               <div className="absolute mt-8 -left-4 w-2/3 h-full border border-foreground/20" />
-              <div className="w-2/3 mt-8 aspect-[3/4] bg-card border border-border overflow-hidden">
+              <div className="w-2/3 mt-10 aspect-[3/4] bg-card border border-border overflow-hidden">
                 <img
                   src={myPhoto}
                   alt="Linh Le"
-                  className="mt-11 w-full h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

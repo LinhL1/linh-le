@@ -9,11 +9,18 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Security Intelligence & Software Intern",
+    role: "Software Development Intern",
     company: "IN Network",
-    period: "JAN 2026 — PRESENT",
+    period: "JUN 2026 — PRESENT",
     description:
-      "Developed an interactive media literacy web app using React. Authored cybersecurity-focused policy briefs and contributed to funding initiatives.",
+      "Plan and organize creative technical projects on national secuirty and related topics.",
+  },
+  {
+    role: "Grant Writing & Technical Intern",
+    company: "IN Network",
+    period: "JAN 2026 — MAY 2026",
+    description:
+      "Supported grant research. Authored cybersecurity-focused policy briefs and contributed to funding initiatives. Developed an interactive media literacy web app using React.",
   },
   {
     role: "Grant Writer",
