@@ -101,7 +101,7 @@ const AboutSection = () => {
                 className={`absolute inset-0 w-full h-full object-contain ${envelopeOpen ? "" : "hidden"}`}
               />
             </a>
-            <p className="editorial-label text-center md:text-left -mt-4 ml-9">Take a peek</p>
+            <p className="editorial-label text-center md:text-left -mt-4 ml-12">Take a peek</p>
 
           </motion.div>
 
