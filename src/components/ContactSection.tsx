@@ -25,7 +25,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h2 className="section-heading text-foreground mb-8">
-              Let's <em className="text-sage">chit-chat</em>
+              Let's <em className="text-sage dark:text-butter/80">chit-chat</em>
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-md mb-10">
               Have a project in mind or just want to say hello?
@@ -37,13 +37,13 @@ const ContactSection = () => {
                 <p className="editorial-label mb-2">Email</p>
                 <a
                   href="mailto:lvnh.le11@gmail.com"
-                  className="font-display text-xl text-foreground hover:text-muted-foreground transition-colors"
+                  className="font-display text-2xl text-foreground hover:text-muted-foreground transition-colors"
                 >
                   lvnh.le11@gmail.com
                 </a>
               </div>
               <div>
-                <p className="editorial-label mb-2">Social</p>
+                <p className="editorial-label mb-2">Socials</p>
                 <div className="space-y-2">
                   {[
                     { name: "GitHub", url: "https://github.com/LinhL1" },
@@ -53,7 +53,7 @@ const ContactSection = () => {
                     <a
                       key={social.name}
                       href={social.url}
-                      className="block font-display text-lg text-foreground hover:text-muted-foreground hover:translate-x-1 transition-all duration-200"
+                      className="block font-display text-2xl text-foreground hover:text-muted-foreground hover:translate-x-1 transition-all duration-200"
                     >
                       {social.name} →
                     </a>

@@ -172,7 +172,7 @@
 
   .section-heading {
     font-family: var(--font-display);
-    @apply text-4xl md:text-5xl font-medium italic;
+    @apply text-4xl md:text-5xl font-medium;
   }
 }
 

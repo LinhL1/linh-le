@@ -190,7 +190,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-        <em>Projects</em>
+        My <em>Projects</em>
         </motion.h2>
 
         {/* Card stack */}

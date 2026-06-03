@@ -72,7 +72,7 @@ const ExperienceSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          Where I've <em>worked</em>
+          My <em>Professional Footprint</em>
         </motion.h2>
 
         <div className="space-y-0">
