@@ -190,7 +190,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-        <em>Projects</em>
+        My <em>Projects</em>
         </motion.h2>
 
         {/* Card stack */}
@@ -248,7 +248,7 @@ const ProjectsSection = () => {
                     <img
                       src={p.image}
                       alt={p.title}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out scale-150 md:scale-100 md:group-hover:scale-[1.03]"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
