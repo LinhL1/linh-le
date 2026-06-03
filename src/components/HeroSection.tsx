@@ -12,14 +12,14 @@ const HeroSection = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="max-w-6xl mx-auto px-6 w-full">
-        <div className="flex flex-col max-w-3xl space-y-8">
+      <div className="max-w-6xl mx-auto px-10 md:px-6 w-full">
+        <div className="flex flex-col max-w-3xl space-y-8 py-10 md:py-0">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="font-display text-5xl sm:text-5xl md:text-4xl lg:text-9xl leading-[0.9] tracking-tight text-background">
+            <h1 className="font-display text-7xl sm:text-7xl md:text-4xl lg:text-9xl leading-[0.9] tracking-tight text-background">
               Fancy seeing you here,
               <br />
               I'm

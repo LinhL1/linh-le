@@ -27,9 +27,9 @@ const AboutSection = () => {
               A bit <em className="text-sage">about me</em>
             </h2>
 
-            <div className="relative">
-              <div className="absolute mt-8 -left-4 w-2/3 h-full border border-foreground/20" />
-              <div className="w-2/3 mt-10 aspect-[3/4] bg-card border border-border overflow-hidden">
+            <div className="relative mx-auto md:mx-0 w-2/3">
+              <div className="absolute mt-8 -left-4 w-full h-full border border-foreground/20" />
+              <div className="w-full mt-10 aspect-[3/4] bg-card border border-border overflow-hidden">
                 <img
                   src={myPhoto}
                   alt="Linh Le"

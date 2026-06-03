@@ -37,7 +37,7 @@ const Navbar = () => {
           : "top-6"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-10 md:px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className={`font-sans text-xs uppercase tracking-[0.2em] transition-colors ${
