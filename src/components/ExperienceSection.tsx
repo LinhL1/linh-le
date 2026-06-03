@@ -22,6 +22,13 @@ const experiences: ExperienceItem[] = [
     description:
       "Supported grant research. Authored cybersecurity-focused policy briefs and contributed to funding initiatives. Developed an interactive media literacy web app using React.",
   },
+   {
+    role: "Tech Program Instructor",
+    company: "Kids in Tech",
+    period: "NOV 2025 — PRESENT",
+    description:
+      "Organize and lead 2–3 after-school Python programming and STEM sessions for local middle schools in the Boston area.",
+  },
   {
     role: "Grant Writer",
     company: "Project Safeweb",
