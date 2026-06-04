@@ -6,6 +6,8 @@ export function CursorEffect() {
   const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+
     let mouseX = 0, mouseY = 0;
     let ringX  = 0, ringY  = 0;
     let rafId: number;
