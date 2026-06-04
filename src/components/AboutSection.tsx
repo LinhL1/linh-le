@@ -117,7 +117,7 @@ const AboutSection = () => {
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
               As an undergraduate CS student with a background in both creative and technical disciplines, I try to bring a unique perspective to the projects I contribute to.
               From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work.
-              What started with a passion for making fun websites turned into a calling to try new things...from projects in AI/ML and cybersecurity to, of course, more web projects.
+              What started with a passion for making fun websites turned into a habit for trying new things...been tinkering with projects in AI/ML and cybersecurity to, of course, more web projects.
               I love seeing where curiosity leads me.
             </p>
 
