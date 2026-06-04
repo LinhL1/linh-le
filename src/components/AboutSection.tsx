@@ -101,7 +101,7 @@ const AboutSection = () => {
                 className={`absolute inset-0 w-full h-full object-contain ${envelopeOpen ? "" : "hidden"}`}
               />
             </a>
-            <p className="editorial-label text-center md:text-left -mt-4 ml-12">Take a peek</p>
+            <p className="editorial-label text-center md:text-left -mt-4 md:ml-12">Take a peek</p>
 
           </motion.div>
 
@@ -129,7 +129,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[
                 { label: "Focus", value: "Front-end Development" },
-                { label: "Interest", value: "Full-stack Development, UI/UX Design, Web Security" },
+                { label: "Interest", value: "Full-stack Development, UI/UX Design, Cybersecurity" },
                 { label: "Based in", value: "Boston, MA" },
                 { label: "Education", value: "B.S in Computer Science" },
                 { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS, Figma" },

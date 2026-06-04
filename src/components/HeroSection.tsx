@@ -35,7 +35,7 @@ const HeroSection = () => {
               Fancy seeing you here,
               <br />
               I'm
-              <span className="italic font-normal text-butter dark:text-butter/80"> Linh</span>
+              <span className="italic font-normal text-butter dark:[color:hsl(var(--taro))]"> Linh</span>
               <br />
             </h1>
           </motion.div>
@@ -47,8 +47,7 @@ const HeroSection = () => {
             className="max-w-md"
           >
             <p className="font-body text-lg leading-relaxed text-background/70">
-              Curious. Life-long learner. Friend.
-              <br />
+              Learner. Builder. Friend.              <br />
               <em className="text-background/90"> Focused on creative problem solving, interaction, and security.</em>
             </p>
           </motion.div>
