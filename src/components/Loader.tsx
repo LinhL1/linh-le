@@ -10,7 +10,7 @@ import frame06 from "@/assets/loader_animation/loader_frame_06.jpg";
 import frame07 from "@/assets/loader_animation/loader_frame_07.jpg";
 
 const FRAMES = [frame01, frame02, frame03, frame04, frame05, frame06, frame07];
-const FRAME_DURATION = 100; // ms — ~10fps
+const FRAME_DURATION = 190; 
 const FADE_DURATION = 500; // ms — must match the opacity transition in Loader.css
 
 interface LoaderProps {
