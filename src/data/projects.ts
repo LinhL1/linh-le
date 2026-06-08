@@ -20,17 +20,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Auralink",
-    type: "Music Hack Space 2026: Biometric Instrument",
-    category: "hackathon",
-    description:
-      "Joint hackathon project: An adaptive bio-music instrument that translates interpersonal biometrics into generative, synchronized musical structures",
-    year: "2026",
-    link: "https://github.com/willdaly/Auralink",
-    image: auralink,
-    tools: ["Python", "Google Deepmind Magenta"]
-  },
-  {
     title: "Jot",
     type: "Web Browser Extension",
     category: "personal",
@@ -40,6 +29,17 @@ export const projects: Project[] = [
     link: "https://github.com/LinhL1/jot-extension",
     image: jot,
     tools: ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    title: "Auralink",
+    type: "Music Hack Space 2026: Biometric Instrument",
+    category: "hackathon",
+    description:
+      "Joint hackathon project: An adaptive bio-music instrument that translates interpersonal biometrics into generative, synchronized musical structures",
+    year: "2026",
+    link: "https://github.com/willdaly/Auralink",
+    image: auralink,
+    tools: ["Python", "Google Deepmind Magenta"]
   },
   {
     title: "INformed",
