@@ -1,0 +1,22 @@
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--background));
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.loader-overlay--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-frame {
+  width: clamp(120px, 20vw, 220px);
+  height: auto;
+  user-select: none;
+}
