@@ -9,11 +9,11 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Software Development Intern",
+    role: "Systems Automation/Software Development Intern",
     company: "IN Network",
     period: "JUN 2026 — PRESENT",
     description:
-      "Plan and organize creative technical projects on national secuirty and related topics.",
+      "Organized creative technical projects on national security and related topics. Developed a media literacy web application focused on misinformation. Supported the implementation of user-friendly automation systems to streamline and improve application review efficiency.",
   },
   {
     role: "Grant Writing & Technical Intern",
