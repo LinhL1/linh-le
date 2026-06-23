@@ -6,6 +6,8 @@ import informed from "@/assets/projects/informed.png";
 import jot from "@/assets/projects/jot.png";
 import progress from "@/assets/projects/progress.png";
 import auralink from "@/assets/projects/auralink.png";
+import toodly from "@/assets/projects/toodly.png";
+
 
 export interface Project {
   title: string;
@@ -20,12 +22,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Toodly",
+    type: "Web Browser Extension",
+    category: "personal",
+    description:
+      "All in one task manager + pomodoro + productivity tracker",
+    year: "June 2026",
+    link: "https://github.com/LinhL1/toodly",
+    image: toodly,
+    tools: ["JavaScript", "HTML", "CSS"]
+  },
+  {
     title: "Jot",
     type: "Web Browser Extension",
     category: "personal",
     description:
       "Common placing + quick notes extension tool",
-    year: "2026",
+    year: "April 2026",
     link: "https://github.com/LinhL1/jot-extension",
     image: jot,
     tools: ["JavaScript", "HTML", "CSS"]
