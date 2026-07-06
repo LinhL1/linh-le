@@ -15,19 +15,19 @@ const experiences: ExperienceItem[] = [
     description:
       "Organized creative technical projects on national security and related topics. Developed a media literacy web application focused on misinformation. Supported the implementation of user-friendly automation systems to streamline and improve application review efficiency.",
   },
-  {
-    role: "Grant Writing & Technical Intern",
-    company: "IN Network",
-    period: "JAN 2026 — MAY 2026",
-    description:
-      "Supported grant research. Authored cybersecurity-focused policy briefs and contributed to funding initiatives. Developed an interactive media literacy web app using React.",
-  },
    {
     role: "Tech Program Instructor",
     company: "Kids in Tech",
     period: "NOV 2025 — PRESENT",
     description:
       "Organize and lead 2–3 after-school Python programming and STEM sessions for local middle schools in the Boston area.",
+  },
+   {
+    role: "Grant Writing & Technical Intern",
+    company: "IN Network",
+    period: "JAN 2026 — MAY 2026",
+    description:
+      "Supported grant research. Authored cybersecurity-focused policy briefs and contributed to funding initiatives. Developed an interactive media literacy web app using React.",
   },
   {
     role: "Grant Writer",
