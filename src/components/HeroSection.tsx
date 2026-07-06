@@ -25,7 +25,7 @@ const HeroSection = () => {
         />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-10 md:px-6 w-full">
-        <div className="flex flex-col max-w-3xl space-y-8 py-10 md:py-0">
+        <div className="flex flex-col max-w-3xl space-y-8 py-10 md:py-0 -mt-16" style={{ marginTop: "-4rem" }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,8 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex gap-6"
+            className="flex gap-6 -mt-4"
+            style={{ marginTop: "1rem" }}
           >
             <button
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
