@@ -43,7 +43,7 @@ export const events: CommunityEvent[] = [
     affiliation: "Independent",
     location: "Remote",
     description:
-      "Admiring how co-working gatherings brought together creative, ambitious people. Wanting to recreate that experience in a more accessible and flexible format, I launched my own recurring virtual sessions where participants could build, connect, or simply enjoy working alongside like-minded people.",
+      "Admiring how coworking events bring together creative and ambitious people, I wanted to recreate that experience in an accessible format...so I launched my own recurring virtual sessions where participants could build, connect, and simply enjoy working alongside like-minded people.",
     image: coworking,
     imageAlt: "Event two",
     postmarkInk: "dark",
