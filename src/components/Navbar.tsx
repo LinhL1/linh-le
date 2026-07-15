@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const navItems = ["About", "Experience", "Projects", "Contact"];
+const navItems = ["About", "Experience", "Community", "Projects", "Contact"];
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);

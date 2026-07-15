@@ -17,7 +17,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="flex items-baseline justify-between mb-4">
-            <p className="editorial-label">03 — Projects</p>
+            <p className="editorial-label">04 — Projects</p>
             <Link
               to="/projects"
               className="font-sans text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors"
