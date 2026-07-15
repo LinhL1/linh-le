@@ -1,6 +1,6 @@
 
 import bouqets_baner from "@/assets/events/bouquet_banter.jpg";
-import coworking from "@/assets/events/SL-coworking.png";
+import coworking from "@/assets/events/sl-coworking.png";
 
 
 
