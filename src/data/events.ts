@@ -32,7 +32,7 @@ export const events: CommunityEvent[] = [
     affiliation: "Rewriting the Code",
     location: "Boston, MA",
     description:
-      "I got to host the RTC Gather Boston: Bouquets & Banter, a community event funded by RTC that brought local women in tech together to build meaningful connections through a fun, creative experience.",
+      "I got to organize and host the RTC Gather Boston: Bouquets & Banter, a community event for RTC that brought local women in tech together to build meaningful connections through a fun, creative experience.",
     image: bouqets_baner,
     imageAlt: "Bouquet social netwoking event",
   },
