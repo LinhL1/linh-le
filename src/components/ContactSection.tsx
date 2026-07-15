@@ -11,7 +11,7 @@ const ContactSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <p className="editorial-label mb-4">04 — Contact</p>
+          <p className="editorial-label mb-4">05 — Contact</p>
           <div className="editorial-divider mb-12" />
         </motion.div>
 
