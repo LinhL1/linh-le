@@ -7,6 +7,8 @@ import jot from "@/assets/projects/jot.png";
 import progress from "@/assets/projects/progress.png";
 import auralink from "@/assets/projects/auralink.png";
 import toodly from "@/assets/projects/toodly.png";
+import glade from "@/assets/projects/glade.png";
+
 
 
 export interface Project {
@@ -22,8 +24,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Glade",
+    type: "PWA/Mobile APP",
+    category: "personal",
+    description:
+      "Daily gratitude app. Local to your device, works offline, perfect for the commute.",
+    year: "July 2026",
+    link: "https://github.com/LinhL1/glade",
+    image: glade,
+    tools: ["JavaScript", "HTML", "CSS"]
+  },
+  {
     title: "Toodly",
-    type: "Web Browser Extension:  “out of sight, out of mind” so keep your tasks in sight",
+    type: "Web Browser Extension",
     category: "personal",
     description:
       "All in one browser extension to manage your evergreen task list and work sessions. Mosaics to track your productivity. Handy pomodoro built in.",
