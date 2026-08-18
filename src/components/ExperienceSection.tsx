@@ -13,14 +13,14 @@ const experiences: ExperienceItem[] = [
     company: "IN Network",
     period: "JUN 2026 — PRESENT",
     description:
-      "Organized creative technical projects on national security and related topics. Developed a media literacy web application focused on misinformation. Supported the implementation of user-friendly automation systems to streamline and improve application review efficiency.",
+      "Led a media literacy web app from concept to launch after spotting a gap in youth digital-safety education. Reworked our internship review process for 500+ applicants, cutting manual review time by 60%.",
   },
    {
     role: "Tech Program Instructor",
     company: "Kids in Tech",
     period: "NOV 2025 — PRESENT",
     description:
-      "Organize and lead 2–3 after-school Python programming and STEM sessions for local middle schools in the Boston area.",
+      "Design, iterate, and lead curriculum for 4 cohorts of Boston-area middle schoolers",
   },
    {
     role: "Grant Writing & Technical Intern",
@@ -41,7 +41,7 @@ const experiences: ExperienceItem[] = [
     company: "Building-U",
     period: "AUG 2024 — AUG 2025",
     description:
-      "Built a mock user admin panel with HTML, CSS, and JavaScript. Conducted peer code reviews to improve code quality for new interns.",
+      "Prototyped an interactive admin dashboard with senior developers, translating stakeholder needs into a working product. Ran 20+ peer code reviews.",
   },
    {
     role: "Video Production",

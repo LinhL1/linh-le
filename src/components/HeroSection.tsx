@@ -1,27 +1,25 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import backgroundImg from "@/assets/background.png";
-import backgroundDarkImg from "@/assets/background_dark.png";
+import backgroundImg from "@/assets/background.webp";
+import backgroundDarkImg from "@/assets/background_dark.webp";
 
 const HeroSection = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const check = () => setIsDark(document.documentElement.classList.contains("dark"));
-    check();
-    const observer = new MutationObserver(check);
-    observer.observe(document.documentElement, { attributeFilter: ["class"] });
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-6 overflow-hidden">
+        {/* Both images are always mounted and preloaded; the `dark` class on <html> flips
+            visibility instantly via CSS instead of swapping `src` (which forced a re-fetch
+            and re-decode of a several-MB PNG on every toggle). */}
         <img
-          src={isDark ? backgroundDarkImg : backgroundImg}
+          src={backgroundImg}
           alt=""
           aria-hidden
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover dark:hidden"
+        />
+        <img
+          src={backgroundDarkImg}
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover hidden dark:block"
         />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-10 md:px-6 w-full">
@@ -48,7 +46,7 @@ const HeroSection = () => {
           >
             <p className="font-body text-lg leading-relaxed text-background/70">
               Learner. Builder. Friend.              <br />
-              <em className="text-background/90"> Focused on creative problem solving, interaction, and security.</em>
+              <em className="text-background/90"> Focused on creative problem solving, user experience, and execution.</em>
             </p>
           </motion.div>
 
