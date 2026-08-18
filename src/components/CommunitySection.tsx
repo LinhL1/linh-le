@@ -30,9 +30,8 @@ const CommunitySection = () => {
             Community & <em>Events</em>
           </h2>
           <p className="text-muted-foreground max-w-xl mb-16">
-            Hosting is one of my creative outlets. 
-            I love designing experiences where people feel welcome, space is intentional, and everyone leaves having had a genuinely good time. 
-            Here are a few events I've hosted with communities I've been lucky to build and be involved with...
+            I love creating experiences where people feel welcome, the space is intentional, and everyone leaves having had a good time. 
+            Here are a few events I've hosted with communities I've been lucky to build with...
           </p>
         </motion.div>
 

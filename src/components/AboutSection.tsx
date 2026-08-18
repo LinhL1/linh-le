@@ -116,23 +116,22 @@ const AboutSection = () => {
             <em className="text-foreground font-display text-3xl">Web developer and designer, just bringing ideas into life in many forms.</em>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
               As an undergraduate CS student with a background in both creative and technical disciplines, I try to bring a unique perspective to the projects I contribute to.
-              From working with non-profit organizations, student-led initiatives, and personal projects, I care about the impact, design, and functionality of my work.
-              What started with a passion for making fun websites turned into a habit for trying new things...been tinkering with projects in AI/ML and cybersecurity to, of course, more web projects.
-              I love seeing where curiosity leads me.
+              From working with non-profit organizations, student-led initiatives, and personal projects, I care about the functionality, design, and impact of my work.
+              What started with a passion for making fun websites turned into a habit for trying new things...from those experiences I’ve developed an interest for understanding problems, thinking about the people I’m building for, and turning ideas into meaningful solutions.
             </p>
 
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
-              When I'm not developing projects, you'll find me
+              When I'm not working on projects, you'll find me
               reading, journaling, or doodling.
             </p>
 
             <div className="grid grid-cols-2 gap-8 pt-6">
               {[
-                { label: "Focus", value: "Front-end Development" },
-                { label: "Interest", value: "Full-stack Development, UI/UX Design, Cybersecurity" },
+                { label: "Focus", value: "Product Management" },
+                { label: "Interest", value: "Full-stack Development, UI/UX Design" },
                 { label: "Based in", value: "Boston, MA" },
                 { label: "Education", value: "B.S in Computer Science" },
-                { label: "Stack/Tools", value: "React/JS, Laravel/PHP, Python, HTML/CSS, Figma" },
+                { label: "Stack/Tools", value: "TypeScript, React/JS, Laravel/PHP, Python, HTML/CSS, Figma, Git/Github" },
               ].map((item) => (
                 <div key={item.label}>
                   <p className="editorial-label mb-1">{item.label}</p>

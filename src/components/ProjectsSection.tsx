@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ProjectCarousel from "@/components/ProjectCarousel";
 
+const featuredProjects = projects.filter((p) => p.featured);
+
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-32">
@@ -22,7 +24,7 @@ const ProjectsSection = () => {
               to="/projects"
               className="font-sans text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors"
             >
-              View all
+              View all projects
             </Link>
           </div>
           <div className="editorial-divider mb-12" />
@@ -36,11 +38,11 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-        My <em>Projects</em>
+        Selected <em>Work</em>
         </motion.h2>
 
         {/* Card stack */}
-        <ProjectCarousel projects={projects} />
+        <ProjectCarousel projects={featuredProjects} />
 
       </div>
     </section>

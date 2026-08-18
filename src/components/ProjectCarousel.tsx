@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { Maximize2 } from "lucide-react";
 
 import type { Project } from "@/data/projects";
+import ProjectDetailDialog from "@/components/ProjectDetailDialog";
 
 const TRANSITION = { duration: 0.65, ease: [0.16, 1, 0.3, 1] as const };
 
@@ -24,6 +25,7 @@ const ProjectCarousel = ({
   imageScaleClassName = "scale-150 md:scale-100 md:group-hover:scale-[1.03]",
 }: ProjectCarouselProps) => {
   const [current, setCurrent] = useState(0);
+  const [selected, setSelected] = useState<Project | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const locked = useRef(false);
   const accum = useRef(0);
@@ -102,11 +104,17 @@ const ProjectCarousel = ({
           const cardStyle = getCardStyle(rel);
 
           return (
-            <motion.a
+            <motion.div
               key={p.title}
-              href={rel === 0 ? (p.link || "#") : undefined}
-              target="_blank"
-              rel="noopener noreferrer"
+              role="button"
+              tabIndex={rel === 0 ? 0 : -1}
+              onClick={() => rel === 0 && setSelected(p)}
+              onKeyDown={(e) => {
+                if (rel === 0 && (e.key === "Enter" || e.key === " ")) {
+                  e.preventDefault();
+                  setSelected(p);
+                }
+              }}
               animate={{
                 y: cardStyle.y,
                 scale: cardStyle.scale,
@@ -131,9 +139,9 @@ const ProjectCarousel = ({
                     {p.year}
                   </p>
                 </div>
-                <ArrowUpRight
-                  size={16}
-                  className="text-muted-foreground group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+                <Maximize2
+                  size={14}
+                  className="text-muted-foreground group-hover:text-foreground transition-all duration-300"
                 />
               </div>
 
@@ -193,10 +201,12 @@ const ProjectCarousel = ({
                 />
               </div>
 
-            </motion.a>
+            </motion.div>
           );
         })}
       </div>
+
+      <ProjectDetailDialog project={selected} onOpenChange={(open) => !open && setSelected(null)} />
 
       {/* Dot nav + scroll hint */}
       <div className="flex items-center justify-between mt-7">

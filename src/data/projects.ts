@@ -11,6 +11,13 @@ import glade from "@/assets/projects/glade.png";
 
 
 
+export interface ProjectCaseStudy {
+  role: string;
+  problem: string;
+  approach: string[];
+  impact: string;
+}
+
 export interface Project {
   title: string;
   type: string;
@@ -20,6 +27,10 @@ export interface Project {
   link?: string;
   image?: string;
   tools?: string[];
+  /** Shown in the homepage top-picks carousel. Everything still appears on /projects. */
+  featured?: boolean;
+  /** PM-style deep dive shown in the focused project dialog. Falls back to `description` when absent. */
+  caseStudy?: ProjectCaseStudy;
 }
 
 export const projects: Project[] = [
@@ -43,7 +54,20 @@ export const projects: Project[] = [
     year: "June 2026",
     link: "https://github.com/LinhL1/toodly",
     image: toodly,
-    tools: ["JavaScript", "HTML", "CSS"]
+    tools: ["JavaScript", "HTML", "CSS"],
+    featured: true,
+    caseStudy: {
+      role: "Solo builder — product scoping, design, and engineering",
+      problem:
+        "Task managers and pomodoro timers usually live in separate tabs or apps, adding friction at the exact moments you're trying to stay focused.",
+      approach: [
+        "Scoped the extension around one core loop — an always-evergreen task list plus a built-in pomodoro timer — so focus tracking never leaves the browser chrome",
+        "Designed \"mosaics\" as a lightweight, at-a-glance productivity view instead of a heavier analytics dashboard, keeping the tool fast to check mid-task",
+        "Chose a browser extension over a standalone web app specifically to minimize the switching cost during real work sessions",
+      ],
+      impact:
+        "Shipped a fully working extension that consolidates task tracking and focus sessions into a single always-available surface.",
+    },
   },
   {
     title: "Jot",
@@ -54,7 +78,20 @@ export const projects: Project[] = [
     year: "April 2026",
     link: "https://github.com/LinhL1/jot-extension",
     image: jot,
-    tools: ["JavaScript", "HTML", "CSS", "Gemini API"]
+    tools: ["JavaScript", "HTML", "CSS", "Gemini API"],
+    featured: true,
+    caseStudy: {
+      role: "Solo builder — product scoping, design, and engineering",
+      problem:
+        "Quick notes and commonly reused snippets — addresses, replies, boilerplate text — get lost across scattered notes apps, docs, and sticky notes.",
+      approach: [
+        "Focused the extension on two core jobs: fast capture of quick notes and reliable recall of commonly-used (\"common placing\") snippets",
+        "Integrated the Gemini API to help surface and organize notes with less manual tagging from the user",
+        "Kept the interaction model to a couple of clicks so it never interrupts the task the user is actually trying to do",
+      ],
+      impact:
+        "Built and shipped a working extension that cuts the friction of reusing common text and capturing quick notes while browsing.",
+    },
   },
   {
     title: "Auralink",
@@ -76,7 +113,20 @@ export const projects: Project[] = [
     year: "MAY 2026",
     link: "https://innetwork-informed.vercel.app/",
     image: informed,
-    tools: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"]
+    tools: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+    featured: true,
+    caseStudy: {
+      role: "Product design & frontend engineering for the IN Network's education initiative",
+      problem:
+        "The IN Network needed an engaging way to teach media literacy — static articles and traditional courses weren't holding attention, especially with younger audiences.",
+      approach: [
+        "Partnered with the IN Network to translate their misinformation-literacy curriculum into a gamified flow with clear progress and feedback loops",
+        "Prioritized a lightweight, mobile-first experience so it could be picked up in short sessions instead of requiring a sit-down course",
+        "Used Framer Motion to add responsive, low-friction feedback that reinforces correct/incorrect calls without breaking the flow",
+      ],
+      impact:
+        "Delivered a deployed, publicly usable web app that gives the IN Network a self-serve education tool they can point learners to directly.",
+    },
   },
   {
     title: "Impromptu",
