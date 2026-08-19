@@ -83,10 +83,10 @@ export const projects: Project[] = [
     caseStudy: {
       role: "Solo builder — product scoping, design, and engineering",
       problem:
-        "Quick notes and commonly reused snippets — addresses, replies, boilerplate text — get lost across scattered notes apps, docs, and sticky notes.",
+        "Quick notes, reflection, quotes get lost across scattered notes apps, docs, and sticky notes.",
       approach: [
         "Focused the extension on two core jobs: fast capture of quick notes and reliable recall of commonly-used (\"common placing\") snippets",
-        "Integrated the Gemini API to help surface and organize notes with less manual tagging from the user",
+        "Integrated the Gemini API to help surface and organize notes with less manual tagging from the user, also useful for further dev of features",
         "Kept the interaction model to a couple of clicks so it never interrupts the task the user is actually trying to do",
       ],
       impact:

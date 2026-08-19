@@ -29,7 +29,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="font-display text-7xl sm:text-7xl md:text-4xl lg:text-9xl leading-[0.9] tracking-tight text-background">
+            <h1 className="pt-7 font-display text-7xl sm:text-7xl md:text-4xl lg:text-9xl leading-[0.9] tracking-tight text-background">
               Fancy seeing you here,
               <br />
               I'm
@@ -57,18 +57,6 @@ const HeroSection = () => {
             className="flex gap-6 -mt-4"
             style={{ marginTop: "1rem" }}
           >
-            <button
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-              className="font-sans text-xs uppercase tracking-[0.15em] text-background/70 hover:text-background transition-colors"
-            >
-              View Work
-            </button>
-            <button
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="font-sans text-xs uppercase tracking-[0.15em] text-background/70 hover:text-background transition-colors"
-            >
-              Get in Touch
-            </button>
           </motion.div>
         </div>
       </div>
