@@ -16,11 +16,11 @@ const experiences: ExperienceItem[] = [
       "Led a media literacy web app from concept to launch after spotting a gap in youth digital-safety education. Reworked our internship review process for 500+ applicants, cutting manual review time by 60%.",
   },
    {
-    role: "Tech Program Instructor",
+    role: "Tech Program Instructor/Program Counselor",
     company: "Kids in Tech",
     period: "NOV 2025 — PRESENT",
     description:
-      "Design, iterate, and lead curriculum for 4 cohorts of Boston-area middle schoolers",
+      "Design, iterate, and lead curriculum for 4 cohorts of Boston-area middle schoolers. Covered STEM, Robotics, and web dev.",
   },
    {
     role: "Grant Writing & Technical Intern",
