@@ -8,7 +8,7 @@ import progress from "@/assets/projects/progress.png";
 import auralink from "@/assets/projects/auralink.png";
 import toodly from "@/assets/projects/toodly.png";
 import glade from "@/assets/projects/glade.png";
-import sprout from "@/assets/projects/Sprout.jpg";
+import sprout from "@/assets/projects/sprout.png";
 
 
 
